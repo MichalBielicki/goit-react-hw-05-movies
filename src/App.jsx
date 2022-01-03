@@ -1,5 +1,9 @@
 
-import { Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import React, { Suspense, lazy } from "react";
@@ -16,6 +20,7 @@ const MoviesPage = lazy(() => import("./components/moviesPage/MoviesPage"));
 function App() {
   return (
     <div className="App">
+       <BrowserRouter>
       <header className="App-header">
         <Menu />
         <Suspense
@@ -29,6 +34,7 @@ function App() {
             />
           }
         >
+          
           <Routes>
             <Route path="/*" element={<HomePage />} />
             <Route path="/movies/" element={<MoviesPage />} />
@@ -37,8 +43,10 @@ function App() {
               <Route path={`/movies/:id/reviews`} element={<Reviews />} />
             </Route>
           </Routes>
+         
         </Suspense>
       </header>
+      </BrowserRouter>
     </div>
   );
 }
