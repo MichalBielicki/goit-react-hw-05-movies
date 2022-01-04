@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-//import "./Menu.css"
+import s from "./Menu.module.css"
 
 const Menu = () => {
   return (
-    <div className="navBar">
-      <NavLink to="/" className="home">
+    <div className={s.navBar}>
+      <NavLink to="/" className={s.home}>
         Home
       </NavLink>
-      <NavLink to="/movies" className="movies">
+      <NavLink to="/movies" className={s.movies}>
         Movies
       </NavLink>
     </div>

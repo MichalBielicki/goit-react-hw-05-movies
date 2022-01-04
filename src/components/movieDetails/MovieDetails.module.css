@@ -1,0 +1,43 @@
+.movieWrapper {
+    margin: 0 100px;
+    text-align: center;
+}
+.button {
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #24b6fa;
+    box-shadow: 5px 5px 5px #000000;
+}
+.poster {
+    margin: 0 ;
+    max-width: 100%;
+}
+.title {
+    margin: 20px 0;
+    color: #13070C;
+}
+.votes, .overview, .genres {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.subtitle {
+    margin: 20px 0;
+    color: #13070C;
+}
+.linkList {
+    list-style: none;
+}
+.listItem {
+    margin-bottom: 10px;
+}
+.link {
+    margin-bottom: 10px;
+    color: #0043fa;
+}
+.link:hover {
+    color: #00aeff;
+    font-weight: 700;
+}

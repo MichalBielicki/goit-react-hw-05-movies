@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { fetchByQuery } from "../utils/api";
-//import "./MoviesPage.css";
 
 const MoviesPage = () => {
   const [searchedMovies, setSearchedMovies] = useState([]);
